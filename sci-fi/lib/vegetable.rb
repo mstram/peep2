@@ -16,4 +16,7 @@ class Vegetable
  def plantit
  end
 
+ def clone
+ end
+
 end
