@@ -6,8 +6,9 @@
 class Human < TimeTravel
  attr_accessor :year
 
- def initialize(name='')
+ def initialize(name='',age=0)
   @name=name
+  @age=age
  end
  
 end
