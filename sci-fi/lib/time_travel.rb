@@ -4,9 +4,12 @@
 #  18:57:14.53
 
 class TimeTravel
- attr_accessor :year
+HERE = '000:00:00 - 00:00:00'
+ attr_accessor :year, :place
 
- def initialize
+ def initialize(yearStart=Time.now,placeStart=HERE)
+  @yearStart = yearStart
+  @placeStart = placeStart
  end
 
  def travel(to_date)
